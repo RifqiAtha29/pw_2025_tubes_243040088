@@ -1,0 +1,4 @@
+<img src="<?= !empty($_SESSION['user']['profile_photo']) ? 
+            htmlspecialchars($_SESSION['user']['profile_photo']) : 
+            'https://ui-avatars.com/api/?name=' . urlencode($_SESSION['user']['username']) ?>" 
+     class="user-avatar">
